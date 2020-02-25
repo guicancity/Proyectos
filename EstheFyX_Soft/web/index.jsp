@@ -12,9 +12,6 @@
       <title>JSP Page</title>
    </head>
    <body>
-      <h1>Hola Xiomarita como estás???</h1>
-      
-      <h1>Bien y tú que tal??</h1>
-      <h2> Jajajajaja el que se responde solo jajaja buuu </h2>
+     
    </body>
 </html>
