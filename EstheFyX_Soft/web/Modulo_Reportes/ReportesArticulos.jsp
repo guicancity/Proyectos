@@ -13,6 +13,6 @@
    </head>
    <body>
       <h1>Bienvenidos a los reportes</h1>
-      <a href="../ReporteArticulos.jsp">Generear Reporte</a>
+      <a href="../Mdl_Reportes_Codigo/ReporteArticulos.jsp">Generear Reporte</a>
    </body>
 </html>

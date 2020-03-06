@@ -22,7 +22,7 @@
       Conexion conexion = new Conexion();
       Connection con = conexion.conecta();
       
-File rutaReporte = new File("C:/Users/User/Documents/NetBeansProjects/Prueba_de_subir_repositorio/EstheFyX_Soft/web/Reportes/002ReporteArticulos.jasper");
+File rutaReporte = new File(application.getRealPath("/Reportes/002ReporteArticulos.jasper"));
 String nombreReporte = "002ReporteArticulos";
 Map parametros = new HashMap();
 

@@ -32,7 +32,6 @@ public Connection conecta(){
 }
 public ResultSet muestra(String sql) throws  SQLException{
     conecta();
-    
     rs= st.executeQuery(sql);
    
     return rs;
