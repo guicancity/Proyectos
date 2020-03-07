@@ -1,10 +1,11 @@
 <%-- 
-    Document   : Login
-    Created on : 6/03/2020, 08:55:14 PM
-    Author     : User
+    Document   : inicio
+    Created on : 07-mar-2020, 8:14:15
+    Author     : SENA
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html><html lang="en">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,20 +140,19 @@
                                            <div class="control-group">
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                             <label>Digite su usuario: </label>
-                                            <input class="form-control" placeholder="Usuario" type="text" required="" name="txtUsuario">
+                                            <input class="form-control" placeholder="Usuario" type="text" required=""name="txtUsuario">
+                                            
                                                </div>
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                                <label>Digite su contraseña: </label>
                                             <input class="form-control" placeholder="Contraseña" type="password" required="" name="txtPassword">
                                            </div>
-                                          </div>
-                                
-                                      
+                                           </div>
+                                        
                                     <div class="modal-footer">
-                                    <button  class="btn btn-xl text-white"style="background-color: #32c69a">Ingresar </button>
+                                    <button type="button" class="btn btn-xl text-white"style="background-color: #32c69a">Ingresar </button>
                                 </div>
-                                             </form>
-                                           
+                                           </form>
                                 </div>
 
                             <!-- Modal footer -->
