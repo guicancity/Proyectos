@@ -4,13 +4,17 @@
     Author     : User
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="javax.websocket.Session"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html><html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>JSP Page</title>
+      <title>Inicio | EstheFyX_Soft</title>
    </head>
    <body>
+    
      
+     <h1>Hola mundo bienvenido Login</h1>
    </body>
 </html>

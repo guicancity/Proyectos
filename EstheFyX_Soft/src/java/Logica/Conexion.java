@@ -20,24 +20,26 @@ public class Conexion {
     String contraseña = "";
     
     
-public Connection conecta(){
+public Connection conecta() throws ClassNotFoundException{
     try{
     Class.forName("com.mysql.jdbc.Driver");
     cn = DriverManager.getConnection(url,usuario,contraseña);
     st = cn.createStatement();
-    }catch(Exception i){
-        
+    
+    System.out.println( "Correcto PUTOO");
+    }catch(SQLException e){
+        System.out.println(e.getMessage() + "Errorrrr PUTOO");
     }
     return cn;   
 }
-public ResultSet muestra(String sql) throws  SQLException{
+public ResultSet muestra(String sql) throws  SQLException, ClassNotFoundException{
     conecta();
     rs= st.executeQuery(sql);
    
     return rs;
 
 }
-public int insert(String sql) throws  SQLException{
+public int insert(String sql) throws  SQLException, ClassNotFoundException{
     conecta();
     int agrega = st.executeUpdate(sql);
     return agrega;

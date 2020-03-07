@@ -7,7 +7,11 @@ package Logica;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,40 +37,35 @@ public class Sesion extends HttpServlet {
     * @throws IOException if an I/O error occurs
     */
    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-           throws ServletException, IOException {
+           throws ServletException, IOException, ClassNotFoundException, SQLException {
       response.setContentType("text/html;charset=UTF-8");
       try (PrintWriter out = response.getWriter()) {
     
+        Conexion conexion = new Conexion();
         
-         String email = request.getParameter("email");
-            String cla = request.getParameter("password");
+         String email = request.getParameter("txtUsuario");
+         String clave = request.getParameter("txtPassword");
 
             HttpSession sesion = request.getSession();
-            ArrayList error = new ArrayList(); //coje el error de usu o cla y lo muestra
+            ArrayList error = new ArrayList(); 
             sesion.setAttribute("error", error);
-
-            sesion.setAttribute("nom", email);//1 lineas muestra el usuario durante la visita a la página
+            sesion.setAttribute("nom", email);
+            String sql = "SELECT * FROM USUARIOS WHERE NOMBREUSUARIO = '" +email+"' AND CLAVE = '"+clave+"'";
+              ResultSet rr = conexion.muestra(sql);
+           String user = "";
+            String password = "";
+            String rol = ""  ;
+              while(rr.next()){
+             user = rr.getString("NOMBREUSUARIO");
+             password = rr.getString("CLAVE");
+             rol = rr.getString("ROL");
+          }
+              
+           sesion.setAttribute("nombreusuario", rol);
             
-            sesion.setAttribute("photo", email); // 1 Este muestra la foto
-            
-            //UsuariosDTO nuevo = new UsuariosDTO();
-         
-            
-            
-            //UsuariosDAO pd = new UsuariosDAO();
-            //ArrayList<UsuariosDTO> lista = new ArrayList();//esto se hace para llamar las variables, para cargarlas en un ArrayList porque están guardadas ahí.
-           // lista = pd.login(email, cla); //llamo el metodo que tiene la conexión con la DB.
-            //luego creo el for mejorado
-            String user = null;
-            String clave = null;
-             // for (UsuariosDTO varia : lista) {//esto es un arreglo del for, se llama e metodo DTO y el ArrayList con las variables
-
-               // user = varia.getCorreoElectronico();
-               // clave = varia.getContrasena();
-                  //   }//El for mejorado se cierra acá, si se cierra después del else no devuelve al login cuando CLAVE INCORRECTA
-                if (email.equals(user) && cla.equals(clave)){
+             if (email.equals(user) && clave.equals(password)){
                    
-                    RequestDispatcher rd = request.getRequestDispatcher("Inicio.jsp");
+                    RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
                     rd.forward(request, response);
                 }else{
                     
@@ -74,6 +73,8 @@ public class Sesion extends HttpServlet {
                     RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
                     rd.forward(request, response);
                 }
+            
+                
          
       }
    }
@@ -90,7 +91,15 @@ public class Sesion extends HttpServlet {
    @Override
    protected void doGet(HttpServletRequest request, HttpServletResponse response)
            throws ServletException, IOException {
-      processRequest(request, response);
+  
+      try {
+         processRequest(request, response);
+      } catch (ClassNotFoundException ex) {
+         Logger.getLogger(Sesion.class.getName()).log(Level.SEVERE, null, ex);
+      } catch (SQLException ex) {
+         Logger.getLogger(Sesion.class.getName()).log(Level.SEVERE, null, ex);
+      }
+      
    }
 
    /**
@@ -104,7 +113,15 @@ public class Sesion extends HttpServlet {
    @Override
    protected void doPost(HttpServletRequest request, HttpServletResponse response)
            throws ServletException, IOException {
-      processRequest(request, response);
+      
+      try {
+         processRequest(request, response);
+      } catch (ClassNotFoundException ex) {
+         Logger.getLogger(Sesion.class.getName()).log(Level.SEVERE, null, ex);
+      } catch (SQLException ex) {
+         Logger.getLogger(Sesion.class.getName()).log(Level.SEVERE, null, ex);
+      }
+     
    }
 
    /**

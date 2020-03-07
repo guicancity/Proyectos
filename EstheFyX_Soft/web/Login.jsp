@@ -13,12 +13,10 @@
    </head>
    <body>
       <form method="post" action="GeneraInformes">
-         <label>Digite su usuario: </label><input type="text" name="txtUsuario">
-         <label>Digite su contraseña: </label><input type="text" name="txtPassword">
+         <label>Digite su usuario: </label><input type="text" required=""name="txtUsuario">
+         <label>Digite su contraseña: </label><input type="password" required="" name="txtPassword">
          <button>Ingresar</button>
-         
-         
-         
+                  
       </form>
       
       
