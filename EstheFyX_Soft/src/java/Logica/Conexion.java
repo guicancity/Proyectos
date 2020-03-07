@@ -15,7 +15,7 @@ public class Conexion {
     Statement st;
     ResultSet rs;
     Connection cn;
-    String url = "jdbc:mysql://localhost:3306/CLUB";
+    String url = "jdbc:mysql://localhost:3306/EMPRESA";
     String usuario = "root";
     String contraseña = "";
     
