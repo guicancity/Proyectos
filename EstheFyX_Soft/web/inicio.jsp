@@ -75,15 +75,29 @@
 									<div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
 										<div class="header_top_nav">
 											<ul class="d-flex flex-row align-items-center justify-content-start">
-												
+											<% HttpSession sesion = request.getSession();
+                                                                                        int sesionactiva = Integer.parseInt(sesion.getAttribute("sesion").toString());
+                                                                                        
+                                                                                        if(sesionactiva != 1){ %>
+                                                                                            
+                                            
                                                                                             <div class="container">
                                                                                             <botton class="btn btn-xl text-white"style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal">Inicio de Sesion </botton>  
                                                                                             </div>
+                                                                                        <% }else{
+                                                                                            }
+
+
+                                                                                        %>    
 											</ul>
 										</div>
 										<div class="header_top_phone">
-											<i class="fa fa-phone" aria-hidden="true"></i>
-											<span>+57 310 455 5836</span>
+											
+											<span><%
+                                                                                           String nombreusuario = (String) sesion.getAttribute("nom");
+                                                                                            %>
+                                                                                        <%= "Bienvenido, " + nombreusuario%>
+                                                                                        </span>
 										</div>
 									</div>
 									<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
