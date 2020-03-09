@@ -4,6 +4,7 @@
     Author     : SENA
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html><html lang="en">
 <!DOCTYPE html>
@@ -36,7 +37,7 @@
 				<button class="menu_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
 			<ul>
-				<li class="menu_item"><a href="index.html">Inicio</a></li>
+				<li class="menu_item"><a href="">Inicio</a></li>
 				<li class="menu_item"><a href="#">Nosotros</a></li>
 				<li class="menu_item"><a href="#">Servicios</a></li>
 				<li class="menu_item"><a href="contact.html">Contactanos</a></li>
@@ -123,6 +124,7 @@
 			</div>
 		</header>
 
+             
                 <!-- Inicio del modal-->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog">
@@ -168,7 +170,7 @@
 						<div class="home_content">
 							<div class="home_title">Clínica Estética</div>
 							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</div>
-							<div class="button home_button"><a href="#"><span>read more</span><span>read more</span></a></div>
+							<div class="button home_button"><a href="#"><span> Leer más</span><span>read more</span></a></div>
 						</div>
 					</div>
 				</div>

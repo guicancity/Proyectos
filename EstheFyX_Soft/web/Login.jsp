@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Health</title>
+<title>Esthetic </title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Health medical template project">
@@ -75,7 +75,7 @@
 											<ul class="d-flex flex-row align-items-center justify-content-start">
 												
                                                                                             <div class="container">
-                                                                                            <botton class="btn btn-xl text-white"style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal">Inicio de Sesion </botton>  
+                                                                                            <botton class="btn btn-xl text-white" style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
                                                                                             </div>
 											</ul>
 										</div>
