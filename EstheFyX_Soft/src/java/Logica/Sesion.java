@@ -56,20 +56,34 @@ public class Sesion extends HttpServlet {
             sesion.setAttribute("nom", email);
             sesion.setAttribute("sesion", sesionactiva);
 
-            String sql = "SELECT * FROM USUARIOS WHERE NOMBREUSUARIO = '" + email + "' AND CLAVE = '" + clave + "'";
-
+            String sql ="SELECT "
+                           + "USUARIOS.NOMBREUSUARIO,"
+                           + "USUARIOS.CLAVE,"
+                           + "USUARIOS.ROL,"
+                           + "USUARIOS.NOMBREROL,"
+                           + "PERSONAS.NOMBRE1,"
+                           + "PERSONAS.APELLIDO1 "
+                    + "FROM "
+                           + "PERSONAS "
+                    + "INNER JOIN USUARIOS "
+                           + "ON USUARIOS.ID = PERSONAS.IDTIPODOCUMENTO "
+                    + "WHERE USUARIOS.NOMBREUSUARIO = '" + email + "' AND USUARIOS.CLAVE = '" + clave + "'";
             ResultSet rr = conexion.muestra(sql);
             String user = "";
             String password = "";
             String rol = "";
+            String nombre1 = "";
+            String apellido1 = "";
 
             while (rr.next()) {
                 user = rr.getString("NOMBREUSUARIO");
                 password = rr.getString("CLAVE");
                 rol = rr.getString("ROL");
+                nombre1 = rr.getString("NOMBRE1");
+                apellido1 = rr.getString("APELLIDO1");
             }
 
-            sesion.setAttribute("nombreusuario", rol);
+            sesion.setAttribute("nombreusuario", nombre1 + " " + apellido1);
 
             if (email.equals(user) && clave.equals(password)) {
 

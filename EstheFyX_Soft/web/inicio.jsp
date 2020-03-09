@@ -94,7 +94,7 @@
 										<div class="header_top_phone">
 											
 											<span><%
-                                                                                           String nombreusuario = (String) sesion.getAttribute("nom");
+                                                                                           String nombreusuario = (String) sesion.getAttribute("nombreusuario");
                                                                                             %>
                                                                                         <%= "Bienvenido, " + nombreusuario%>
                                                                                         </span>
