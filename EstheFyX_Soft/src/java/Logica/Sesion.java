@@ -45,11 +45,12 @@ public class Sesion extends HttpServlet {
         
          String email = request.getParameter("txtUsuario");
          String clave = request.getParameter("txtPassword");
-
+        int sesionactiva = 1;
             HttpSession sesion = request.getSession();
             ArrayList error = new ArrayList(); 
             sesion.setAttribute("error", error);
             sesion.setAttribute("nom", email);
+            sesion.setAttribute("sesion", sesionactiva);
             String sql = "SELECT * FROM USUARIOS WHERE NOMBREUSUARIO = '" +email+"' AND CLAVE = '"+clave+"'";
               ResultSet rr = conexion.muestra(sql);
            String user = "";
@@ -65,11 +66,11 @@ public class Sesion extends HttpServlet {
             
              if (email.equals(user) && clave.equals(password)){
                    
-                    RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                    RequestDispatcher rd = request.getRequestDispatcher("inicio.jsp");
                     rd.forward(request, response);
                 }else{
                     
-                    error.add("correo o clave incorrecta");
+                    error.add("Correo o clave incorrecta");
                     RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
                     rd.forward(request, response);
                 }
