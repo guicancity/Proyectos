@@ -76,9 +76,7 @@
 										<div class="header_top_nav">
 											<ul class="d-flex flex-row align-items-center justify-content-start">
 												
-                                                                                            <div class="container">
-                                                                                            <botton class="btn btn-xl text-white"style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal">Inicio de Sesion </botton>  
-                                                                                            </div>
+                                                                                            
 											</ul>
 										</div>
 										<div class="header_top_phone">
@@ -101,7 +99,7 @@
 										<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
 											<nav class="main_nav">
 												<ul class="d-flex flex-row align-items-center justify-content-start">
-													<li class="active"><a href="index.html">Inicio</a></li>
+													<li class="active"><a href="">Inicio</a></li>
 													<li><a href="about.html">Nosotros</a></li>
 													<li><a href="services.html">Servicios</a></li>
 													<li><a href="news.html">Productos</a></li>
@@ -123,46 +121,8 @@
 				</div>	
 			</div>
 		</header>
-
-             
-                <!-- Inicio del modal-->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-      
-                            <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Inicio de Sesión</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-
-                            <!-- Modal body -->
-                                <div class="modal-body">
-                                       <form method="post" action="GeneraInformes">
-                                           <div class="control-group">
-                                               <div class="form-group flotting-label-form-group controls mb-0 pb-2">
-                                            <label>Digite su usuario: </label>
-                                            <input class="form-control" placeholder="Usuario" type="text" required=""name="txtUsuario">
-                                            
-                                               </div>
-                                               <div class="form-group flotting-label-form-group controls mb-0 pb-2">
-                                               <label>Digite su contraseña: </label>
-                                            <input class="form-control" placeholder="Contraseña" type="password" required="" name="txtPassword">
-                                           </div>
-                                           </div>
-                                        
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-xl text-white"style="background-color: #32c69a">Ingresar </button>
-                                </div>
-                                           </form>
-                                </div>
-
-                            <!-- Modal footer -->
-                                
-                        </div>
-                    </div>
-                </div>
-                <!--Fin del modal-->
+            
+                    
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
@@ -177,6 +137,7 @@
 			</div>
 		</div>
 	</div>
+        
 
 	<!-- Info Boxes -->
 
