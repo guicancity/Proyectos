@@ -78,6 +78,7 @@
                                                                                             <div class="container">
                                                                                             <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
                                                                                             </div>
+                                                                                            <a href="#Registro" class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
 											</ul>
 										</div>
 										<div class="header_top_phone">
@@ -148,12 +149,10 @@
                                             <small><a href="#"> ¿Olvidó su contraseña? </a>  </small>
                                            </div>
                                           </div>
-                                
-                                      
+                                                                                                                                  
+                                           <%=request.getAttribute("errorMessage")%>
                                     <div class="modal-footer">
-                                       
                                         <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"> Ingresar </button>
-                                    <a href="#Registro" class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
                                     </div>
                                     </form>
                                 
@@ -166,14 +165,7 @@
                 </div>
                 <!--Fin del modal-->
                 
-                  <%
-                    HttpSession sesion = request.getSession();
-                    ArrayList mal = (ArrayList) sesion.getAttribute("error");
-                    
-                    if (mal != null) {
-                        out.print(mal);
-                    }
-                    %>
+                
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
