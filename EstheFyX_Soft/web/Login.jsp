@@ -4,6 +4,7 @@
     Author     : User
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,7 +76,7 @@
 											<ul class="d-flex flex-row align-items-center justify-content-start">
 												
                                                                                             <div class="container">
-                                                                                            <botton class="btn btn-xl text-white" style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
+                                                                                            <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
                                                                                             </div>
 											</ul>
 										</div>
@@ -103,7 +104,7 @@
 													<li><a href="about.html">Nosotros</a></li>
 													<li><a href="services.html">Servicios</a></li>
 													<li><a href="news.html">Productos</a></li>
-													<li><a href="contact.html">Contactactanos</a></li>
+													<li><a href="contact.html">Contactanos</a></li>
 												</ul>
 											</nav>
 											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
@@ -129,7 +130,7 @@
       
                             <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Inicio de Sesión</h4>
+                                    <h2 class="modal-title"> Inicio de Sesión </h2>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
 
@@ -138,21 +139,24 @@
                                        <form method="post" action="GeneraInformes">
                                            <div class="control-group">
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
-                                            <label>Digite su usuario: </label>
+                                            <label> Digite su usuario: </label>
                                             <input class="form-control" placeholder="Usuario" type="text" required="" name="txtUsuario">
                                                </div>
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                                <label>Digite su contraseña: </label>
                                             <input class="form-control" placeholder="Contraseña" type="password" required="" name="txtPassword">
+                                            <small><a href="#"> ¿Olvidó su contraseña? </a>  </small>
                                            </div>
                                           </div>
                                 
                                       
                                     <div class="modal-footer">
-                                    <button  class="btn btn-xl text-white"style="background-color: #32c69a">Ingresar </button>
-                                </div>
-                                             </form>
-                                           
+                                       
+                                    <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"  > Ingresar </button>
+                                    <a class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
+                                    </div>
+                                    </form>
+                                
                                 </div>
 
                             <!-- Modal footer -->
@@ -161,14 +165,23 @@
                     </div>
                 </div>
                 <!--Fin del modal-->
+                
+                  <%
+                    HttpSession sesion = request.getSession();
+                    ArrayList mal = (ArrayList) sesion.getAttribute("error");
+                    
+                    if (mal != null) {
+                        out.print(mal);
+                    }
+                    %>
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
 							<div class="home_title">Clínica Estética</div>
-							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</div>
-							<div class="button home_button"><a href="#"><span>read more</span><span>read more</span></a></div>
+							<div class="home_text"> Todo lo que necesitas saber sobre tratamientos estéticos lo encuentras aquí, puedes agendar tu cita y conocer a nuestros profesionales. </div>
+							<div class="button home_button"><a href="#"><span> Leer más </span><span> Leer más </span></a></div>
 						</div>
 					</div>
 				</div>
@@ -176,6 +189,7 @@
 		</div>
 	</div>
 
+       
 	<!-- Info Boxes -->
 
 	<div class="info">
@@ -187,9 +201,9 @@
 					<div class="info_box">
 						<div class="info_image"><img src="images/info_1.jpg" alt=""></div>
 						<div class="info_content">
-							<div class="info_title">Free Consultations</div>
-							<div class="info_text">Arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus mollis.</div>
-							<div class="button info_button"><a href="#"><span>read more</span><span>read more</span></a></div>
+							<div class="info_title"> Tratamientos </div>
+							<div class="info_text"> Ofrecemos los mejores tratamientos que ayudan a resaltar tu belleza haciendo uso de la última tecnología.  </div>
+							<div class="button info_button"><a href="#"><span> Leer más</span><span> Leer más</span></a></div>
 						</div>
 					</div>
 				</div>
@@ -199,9 +213,9 @@
 					<div class="info_box">
 						<div class="info_image"><img src="images/info_2.jpg" alt=""></div>
 						<div class="info_content">
-							<div class="info_title">Emergency Care</div>
-							<div class="info_text">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus.</div>
-							<div class="button info_button"><a href="#"><span>read more</span><span>read more</span></a></div>
+							<div class="info_title"> Productos </div>
+							<div class="info_text"> Los productos que ofrecemos son de alta calidad, brindándole a tu cuerpo el mejor cuidado y protección. </div>
+							<div class="button info_button"><a href="#"> <span> Leer más </span><span> Leer más</span></a></div>
 						</div>
 					</div>
 				</div>
@@ -209,21 +223,24 @@
 				<!-- Info Form -->
 				<div class="col-lg-4 info_box_col">
 					<div class="info_form_container">
-						<div class="info_form_title">Make an Appointment</div>
+						<div class="info_form_title"> Registrarse </div>
 						<form action="#" class="info_form" id="info_form">
-							<select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
-								<option>Department</option>
-								<option>Department</option>
-								<option>Department</option>
+							<select name="ddlTipocedula" id="info_form_dep" class="info_form_dep info_input info_select">
+								<option>Tipo de documento</option>
+								<option value="1">Cédula de ciudadanía</option>
+								<option value="2">Cédula de extranjería</option>
 							</select>
-							<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
-								<option>Doctor</option>
-								<option>Doctor</option>
-								<option>Doctor</option>
-							</select>
-							<input type="text" class="info_input" placeholder="Name" required="required">
-							<input type="text" class="info_input" placeholder="Phone No">
-							<button class="info_form_button">make an appointment</button>
+                                                        <input type="text" name="txtnumerodoc" class="info_input" placeholder="Número documento" required="required">
+                                                        <input type="text" name="txtnombre1" class="info_input" placeholder="Primer nombre" required="required">
+                                                        <input type="text" name="txtnombre2" class="info_input" placeholder="Segundo nombre" required="required">
+                                                        <input type="text" name="txtapellido1" class="info_input" placeholder="Primer apellido" required="required">
+                                                        <input type="text" name="txtapellido2" class="info_input" placeholder="Segundo apellido" required="required">
+							<input type="text" name="txttelefono" class="info_input" placeholder="Teléfono" required="required">
+                                                        <hr>
+                                                        <input type="text" name="txtusuario" class="info_input" placeholder="Usuario" required="required">
+							<input type="password" name="txtpassword" class="info_input" placeholder="Contraseña" required="required">
+                                                        <input type="password" name="txtconpassword" class="info_input" placeholder="Confirmar contraseña" required="required">
+							<button class="info_form_button"> Enviar</button>
 						</form>
 					</div>
 				</div>
