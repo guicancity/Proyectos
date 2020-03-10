@@ -90,8 +90,8 @@ public class Sesion extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("inicio.jsp");
                 rd.forward(request, response);
             } else {
-
-                error.add("Correo o clave incorrecta");
+                sesion.invalidate();
+                request.setAttribute("errorMessage", "Correo o clave incorrecta");
                 RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
                 rd.forward(request, response);
             }
