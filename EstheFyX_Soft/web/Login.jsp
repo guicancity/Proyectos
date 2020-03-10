@@ -140,11 +140,11 @@
                                            <div class="control-group">
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                             <label> Digite su usuario: </label>
-                                            <input class="form-control" placeholder="Usuario" type="text" required="" name="txtUsuario">
+                                            <input class="form-control" placeholder="&#128272; Usuario" type="text" required="" name="txtUsuario">
                                                </div>
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                                <label>Digite su contraseña: </label>
-                                            <input class="form-control" placeholder="Contraseña" type="password" required="" name="txtPassword">
+                                            <input class="form-control" placeholder="&#128273 Contraseña" type="password" required="" name="txtPassword">
                                             <small><a href="#"> ¿Olvidó su contraseña? </a>  </small>
                                            </div>
                                           </div>
@@ -152,8 +152,8 @@
                                       
                                     <div class="modal-footer">
                                        
-                                    <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"  > Ingresar </button>
-                                    <a class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
+                                        <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"> Ingresar </button>
+                                    <a href="#Registro" class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
                                     </div>
                                     </form>
                                 
@@ -191,7 +191,7 @@
 
        
 	<!-- Info Boxes -->
-
+ <a name="Registro" ></a>
 	<div class="info">
 		<div class="container">
 			<div class="row row-eq-height">
@@ -221,6 +221,7 @@
 				</div>
 
 				<!-- Info Form -->
+                               
 				<div class="col-lg-4 info_box_col">
 					<div class="info_form_container">
 						<div class="info_form_title"> Registrarse </div>
