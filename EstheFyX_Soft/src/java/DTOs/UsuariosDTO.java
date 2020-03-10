@@ -10,6 +10,7 @@ package DTOs;
  * @author SENA
  */
 public class UsuariosDTO {
+    
     String nombreusuario,clave,nombrerol;
     int id,rol;
 public UsuariosDTO(){
