@@ -22,6 +22,11 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<script>
+        function detener() { window.history.forward(); }
+        setTimeout("detener()", 0);
+        window.onunload = function () { null };
+    </script>
 </head>
 <body>
 
@@ -96,10 +101,10 @@
 											<span><%
                                                                                            String nombreusuario = (String) sesion.getAttribute("nombreusuario");
                                                                                             %>
-                                                                                        <%= "Bienvenido, " + nombreusuario%>
+                                                                                        <%= nombreusuario%>
                                                                                         </span>
                                                                                         
-                                                                                        <a href="Login.jsp"> <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer">Cerrar Sesión </button> </a>
+                                                                                        <a href="Login.jsp"> <button class="btn " style="background-color: #32c69a; cursor:pointer"><span class="fa text-white fa-sign-out"> </span> </button> </a>
 										</div>
 									</div>
 									<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
