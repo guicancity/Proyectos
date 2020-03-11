@@ -98,6 +98,8 @@
                                                                                             %>
                                                                                         <%= "Bienvenido, " + nombreusuario%>
                                                                                         </span>
+                                                                                        
+                                                                                        <a href="Login.jsp"> <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer">Cerrar Sesión </button> </a>
 										</div>
 									</div>
 									<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>

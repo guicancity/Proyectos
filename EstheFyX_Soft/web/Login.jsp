@@ -149,8 +149,12 @@
                                             <small><a href="#"> ¿Olvidó su contraseña? </a>  </small>
                                            </div>
                                           </div>
-                                                                                                                                  
-                                           <%=request.getAttribute("errorMessage")%>
+                                                                                                                                
+                                           <% if(null!=request.getAttribute("errorMessage")) {
+                                              out.println(request.getAttribute("errorMessage"));
+                                              }
+                                               %>
+                                               
                                     <div class="modal-footer">
                                         <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"> Ingresar </button>
                                     </div>

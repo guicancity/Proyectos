@@ -50,9 +50,7 @@ public class Sesion extends HttpServlet {
             int sesionactiva = 1;
 
             HttpSession sesion = request.getSession();
-            ArrayList error = new ArrayList();
-
-            sesion.setAttribute("error", error);
+         
             sesion.setAttribute("nom", email);
             sesion.setAttribute("sesion", sesionactiva);
 
@@ -74,6 +72,7 @@ public class Sesion extends HttpServlet {
             String rol = "";
             String nombre1 = "";
             String apellido1 = "";
+            
 
             while (rr.next()) {
                 user = rr.getString("NOMBREUSUARIO");
@@ -86,7 +85,7 @@ public class Sesion extends HttpServlet {
             sesion.setAttribute("nombreusuario", nombre1 + " " + apellido1);
 
             if (email.equals(user) && clave.equals(password)) {
-
+            
                 RequestDispatcher rd = request.getRequestDispatcher("inicio.jsp");
                 rd.forward(request, response);
             } else {
