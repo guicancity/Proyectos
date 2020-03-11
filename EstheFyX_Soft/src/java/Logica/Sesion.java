@@ -54,17 +54,20 @@ public class Sesion extends HttpServlet {
             sesion.setAttribute("nom", email);
             sesion.setAttribute("sesion", sesionactiva);
 
-            String sql ="SELECT "
-                           + "USUARIOS.NOMBREUSUARIO,"
-                           + "USUARIOS.CLAVE,"
-                           + "USUARIOS.ROL,"
-                           + "USUARIOS.NOMBREROL,"
-                           + "PERSONAS.NOMBRE1,"
-                           + "PERSONAS.APELLIDO1 "
-                    + "FROM "
-                           + "PERSONAS "
-                    + "INNER JOIN USUARIOS "
-                           + "ON USUARIOS.ID = PERSONAS.IDTIPODOCUMENTO "
+            String sql ="SELECT USUARIOS.IDPERSONAS, "
+                    + "USUARIOS.NOMBREUSUARIO,"
+                    + "USUARIOS.CLAVE,"
+                    + "USUARIOS.ROL,"
+                    + "USUARIOS.NOMBREROL,"
+                    + "PERSONAS.NOMBRE1, "
+                    + "PERSONAS.NOMBRE2,"
+                    + "PERSONAS.APELLIDO1,"
+                    + "PERSONAS.APELLIDO2,"
+                    + "PERSONAS.TIPO,"
+                    + "PERSONAS.CARGO,"
+                    + "PERSONAS.NUMERODOCUMENTO "
+                    + "FROM USUARIOS INNER JOIN PERSONAS "
+                    + "ON PERSONAS.ID = USUARIOS.IDPERSONAS "
                     + "WHERE USUARIOS.NOMBREUSUARIO = '" + email + "' AND USUARIOS.CLAVE = '" + clave + "'";
             ResultSet rr = conexion.muestra(sql);
             String user = "";
