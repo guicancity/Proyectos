@@ -36,4 +36,41 @@ public class UsuariosDAO {
       return lista;
     }
     
+    
+    public int nuevoUsuarioPersona(int tipoDocumento,String numeroDocumento,String nombre1,String nombre2,String apellido1,String apellido2 ,String tipo ,String cargo,String telefono,String usuario,String password) throws SQLException, ClassNotFoundException{
+    
+       Conexion conexion = new Conexion();
+       int insertaUsuario = 0;
+       int insertaPersona = 0;
+       String sqlPersona = "INSERT INTO "
+            + "PERSONAS("
+                     + "IDTIPODOCUMENTO,"
+                     + "NUMERODOCUMENTO,"
+                     + "NOMBRE1,"
+                     + "NOMBRE2,"
+                     + "APELLIDO1,"
+                     + "APELLIDO2,"
+                     + "TIPO,"
+                     + "CARGO,"
+                     + "TELEFONO) "
+            + "VALUES("+tipoDocumento+",'"
+                       +numeroDocumento +"','"
+                       +nombre1+"','"
+                       +nombre2+"','"
+                       +apellido1+"','"
+                       +apellido2+"','"
+                       +tipo+"','"
+                       +cargo+"','"
+                       +telefono+"')";
+    
+   String sqlUsuario =  "insert INTO USUARIOS(IDPERSONAS,NOMBREUSUARIO,CLAVE,ROL,NOMBREROL) VALUES ((SELECT ID FROM PERSONAS WHERE NUMERODOCUMENTO = '"+ numeroDocumento +"'),'"+usuario+"','"+password+"',3,'CLIENTE')";
+       
+    insertaPersona = conexion.insert(sqlPersona);
+   if(insertaPersona == 1){
+     insertaUsuario = conexion.insert(sqlUsuario);
+   }    
+   
+   return insertaUsuario;   
+    }
+    
 }

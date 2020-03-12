@@ -221,7 +221,7 @@
 				<div class="col-lg-4 info_box_col">
 					<div class="info_form_container">
 						<div class="info_form_title"> Registrarse </div>
-						<form action="#" class="info_form" id="info_form">
+						<form action="InsertaUsuario.jsp" class="info_form" id="info_form">
 							<select name="ddlTipocedula" id="info_form_dep" class="info_form_dep info_input info_select">
 								<option>Tipo de documento</option>
 								<option value="1">Cédula de ciudadanía</option>
