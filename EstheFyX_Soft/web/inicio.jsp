@@ -35,17 +35,21 @@
 	<!-- Menu -->
 
 	<div class="menu trans_500">
-		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+	
+            <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+               <%
+                                                                     HttpSession sesion = request.getSession(); 
+                                                                      String nombreusuario = (String) sesion.getAttribute("nombreusuario");
+                                                                                            %>
+                                                                                              <span class=" text-white" style="border:1px solid white; border-radius: 5px; font-size: 2em; padding: 5px;"><i class="fa fa-user-circle-o"></i> <%= nombreusuario%> </span>	
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<form action="#" class="menu_search_form">
-				<input type="text" class="menu_search_input" placeholder="Buscar" required="required">
-				<button class="menu_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</form>
-			<ul>
+			<ul> 
+                            
 				<li class="menu_item"><a href="">Inicio</a></li>
 				<li class="menu_item"><a href="#">Nosotros</a></li>
 				<li class="menu_item"><a href="#">Servicios</a></li>
 				<li class="menu_item"><a href="contact.html">Contactanos</a></li>
+                                <a href="CerrarSesion.jsp"> <button class="btn " style="background-color: #32c69a; cursor:pointer"><span class="fa text-white fa-3x fa-sign-out"> </span> </button> </a>
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -90,10 +94,8 @@
 										</div>
 										<div class="header_top_phone">
 											
-											<span><%
-                                                                     HttpSession sesion = request.getSession(); 
-                                                                      String nombreusuario = (String) sesion.getAttribute("nombreusuario");
-                                                                                            %>
+											<span>
+                                                                                            <i class="fa fa-user-circle-o"></i>
                                                                                         <%= nombreusuario%>
                                                                                         </span>
                                                                                         
@@ -122,12 +124,7 @@
 													<li><a href="contact.html">Contactactanos</a></li>
 												</ul>
 											</nav>
-											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-												<form action="#" id="search_container_form" class="search_container_form">
-													<input type="text" class="search_container_input" placeholder="Buscar" required="required">
-													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-												</form>
-											</div>
+											
 										</div>
 									</div>
 								</div>

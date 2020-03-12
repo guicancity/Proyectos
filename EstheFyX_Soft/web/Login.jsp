@@ -40,6 +40,13 @@
 				<li class="menu_item"><a href="#">Nosotros</a></li>
 				<li class="menu_item"><a href="#">Servicios</a></li>
 				<li class="menu_item"><a href="contact.html">Contactanos</a></li>
+                           
+												
+                                                                                            <div class="container">
+                                                                                            <botton class="btn btn-xl btn-outline-light " style=" cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
+                                                                                            
+                                                                                            <a href="#Registro" class="btn btn-xl  btn-outline-light " style=" cursor:pointer"> Registrarse </a>  
+											</div>
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -78,7 +85,7 @@
                                                                                             <div class="container">
                                                                                             <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
                                                                                             </div>
-                                                                                            <a href="#Registro" class="btn btn-xl text-white float_left" style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
+                                                                                            <a href="#Registro" class="btn btn-xl text-white " style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
 											</ul>
 										</div>
 										<div class="header_top_phone">
@@ -221,7 +228,7 @@
 				<div class="col-lg-4 info_box_col">
 					<div class="info_form_container">
 						<div class="info_form_title"> Registrarse </div>
-						<form action="InsertaUsuario.jsp" class="info_form" id="info_form">
+                                                <form action="InsertaUsuario.jsp" class="info_form" id="info_form" method="post">
 							<select name="ddlTipocedula" id="info_form_dep" class="info_form_dep info_input info_select">
 								<option>Tipo de documento</option>
 								<option value="1">Cédula de ciudadanía</option>
@@ -237,7 +244,11 @@
                                                         <input type="text" name="txtusuario" class="info_input" placeholder="Usuario" required="required">
 							<input type="password" name="txtpassword" class="info_input" placeholder="Contraseña" required="required">
                                                         <input type="password" name="txtconpassword" class="info_input" placeholder="Confirmar contraseña" required="required">
-							<button class="info_form_button"> Enviar</button>
+                                                        
+							<button class="info_form_button"> Registrar</button>
+                                                        <br>
+                                                        <br>
+                                                                                                                
 						</form>
 					</div>
 				</div>
