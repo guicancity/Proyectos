@@ -80,31 +80,24 @@
 									<div class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
 										<div class="header_top_nav">
 											<ul class="d-flex flex-row align-items-center justify-content-start">
-											<% HttpSession sesion = request.getSession();
-                                                                                        int sesionactiva = Integer.parseInt(sesion.getAttribute("sesion").toString());
-                                                                                        
-                                                                                        if(sesionactiva != 1){ %>
+											
                                                                                             
                                             
                                                                                             <div class="container">
-                                                                                            <botton class="btn btn-xl text-white"style="background-color: #32c69a" type="button" data-toggle="modal" data-target="#myModal">Inicio de Sesion </botton>  
                                                                                             </div>
-                                                                                        <% }else{
-                                                                                            }
-
-
-                                                                                        %>    
+                                                                                          
 											</ul>
 										</div>
 										<div class="header_top_phone">
 											
 											<span><%
-                                                                                           String nombreusuario = (String) sesion.getAttribute("nombreusuario");
+                                                                     HttpSession sesion = request.getSession(); 
+                                                                      String nombreusuario = (String) sesion.getAttribute("nombreusuario");
                                                                                             %>
                                                                                         <%= nombreusuario%>
                                                                                         </span>
                                                                                         
-                                                                                        <a href="Login.jsp"> <button class="btn " style="background-color: #32c69a; cursor:pointer"><span class="fa text-white fa-sign-out"> </span> </button> </a>
+                                                                                        <a href="CerrarSesion.jsp"> <button class="btn " style="background-color: #32c69a; cursor:pointer"><span class="fa text-white fa-sign-out"> </span> </button> </a>
 										</div>
 									</div>
 									<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
