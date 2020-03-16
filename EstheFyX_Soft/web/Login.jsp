@@ -37,12 +37,10 @@
 				<li class="menu_item"><a href="#">Servicios</a></li>
 				<li class="menu_item"><a href="contact.html">Contactanos</a></li>
                            
-												
-                                                                                            <div class="container">
-                                                                                            <botton class="btn btn-xl btn-outline-light " style=" cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
-                                                                                            
-                                                                                            <a href="#Registro" class="btn btn-xl  btn-outline-light " style=" cursor:pointer"> Registrarse </a>  
-											</div>
+			        <div class="container">
+                                    <botton class="btn btn-xl btn-outline-light " style=" cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
+                                        <a href="#Registro" class="btn btn-xl  btn-outline-light " style=" cursor:pointer"> Registrarse </a>  
+                                </div>
 			</ul>
 		</div>
 		<div class="menu_social">
@@ -79,7 +77,7 @@
 											<ul class="d-flex flex-row align-items-center justify-content-start">
 												
                                                                                             <div class="container">
-                                                                                            <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
+                                                                                            <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesión </botton>  
                                                                                             </div>
                                                                                             <a href="#Registro" class="btn btn-xl text-white " style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
 											</ul>
@@ -91,7 +89,7 @@
 									</div>
 									<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
 								</div>
-							</div>
+							</div>  
 						</div>
 					</div>
 				</div>
@@ -111,12 +109,7 @@
 													<li><a href="contact.html">Contactanos</a></li>
 												</ul>
 											</nav>
-											<div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-												<form action="#" id="search_container_form" class="search_container_form">
-													<input type="text" class="search_container_input" placeholder="Buscar" required="required">
-													<button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-												</form>
-											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -198,10 +191,10 @@
 				<!-- Info Box -->
 				<div class="col-lg-4 info_box_col">
 					<div class="info_box">
-						<div class="info_image"><img src="images/info_1.jpg" alt=""></div>
+						<div class="info_image"><img  src="images/spa.jpg" alt=""></div>
 						<div class="info_content">
 							<div class="info_title"> Tratamientos </div>
-							<div class="info_text"> Ofrecemos los mejores tratamientos que ayudan a resaltar tu belleza haciendo uso de la última tecnología.  </div>
+							<div class="info_text"> Ofrecemos los mejores tratamientos que ayudan a mantener, cuidar y resaltar la piel, apariencia corporal, atendiendo los criterios de estética, belleza y salud, ofreciendo atención especializada de la más alta calidad científica y humana a través de diversos tratamientos médicos mínimamente invasivos.    </div>
 							<div class="button info_button"><a href="#"><span> Leer más</span><span> Leer más</span></a></div>
 						</div>
 					</div>
@@ -210,10 +203,10 @@
 				<!-- Info Box -->
 				<div class="col-lg-4 info_box_col">
 					<div class="info_box">
-						<div class="info_image"><img src="images/info_2.jpg" alt=""></div>
+                                            <div class="info_image"><img src="images/women.jpg" alt=""></div>
 						<div class="info_content">
 							<div class="info_title"> Productos </div>
-							<div class="info_text"> Los productos que ofrecemos son de alta calidad, brindándole a tu cuerpo el mejor cuidado y protección. </div>
+							<div class="info_text"> Los productos que ofrecemos son de alta calidad, brindándole a tu cuerpo el mejor cuidado y protección. Puedes encontrar productos de todas las marcas profesionales, productos para tu cuidado diario en el hogar y equipos portatiles profesionales que ayudarán a que tu piel se vea más tonificada. </div>
 							<div class="button info_button"><a href="#"> <span> Leer más </span><span> Leer más</span></a></div>
 						</div>
 					</div>
@@ -243,8 +236,7 @@
                                                         
                                                         <button class="info_form_button" onclick="comprobarClave()"> Registrar</button>
                                                         <br>
-                                                        <br>
-                                                                                                                
+                                                        <br>                                                  
 						</form>
 					</div>
 				</div>
@@ -261,10 +253,10 @@
 				<div class="col">
 					<div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
 						<div class="cta_content text-xl-left text-center">
-							<div class="cta_title">Make an appointment with one of our professional Doctors.</div>
-							<div class="cta_subtitle">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</div>
+							<div class="cta_title"> Programa una cita con uno de nuestros médicos profesionales.</div>
+							<div class="cta_subtitle"> Nuestros servicios de estética te esperan, solicita tu cita ahora. </div>
 						</div>
-						<div class="button cta_button ml-xl-auto"><a href="#"><span>call now</span><span>call now</span></a></div>
+						<div class="button cta_button ml-xl-auto"><a href="#"><span> Agendar </span><span> Agendar </span></a></div>
 					</div>
 				</div>
 			</div>
@@ -277,8 +269,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="section_title">Our Services</div>
-					<div class="section_subtitle">to choose from</div>
+					<div class="section_title"> Nuestros Servicios</div>
 				</div>
 			</div>
 			<div class="row icon_boxes_row">
@@ -287,10 +278,10 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_1.svg" alt=""></div>
-							<div class="icon_box_title">Cardiology</div>
+							<div class="icon_box_icon"><img src="images/estetica.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos Faciales </div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> Una piel joven se caracteriza por verse lisa, firme y con adecuado volumen. Aquí encontraras los mejores tratamientos para tu belleza.</div>
 					</div>
 				</div>
 
@@ -298,10 +289,10 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_2.svg" alt=""></div>
-							<div class="icon_box_title">Gastroenterology</div>
+							<div class="icon_box_icon"><img src="images/nariz.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos para Manchas </div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> ¡No más marcas en la piel! Te tenemos los mejores tratamientos para eliminar las estrías y ese acné indeseado.</div>
 					</div>
 				</div>
 
@@ -309,10 +300,10 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_3.svg" alt=""></div>
-							<div class="icon_box_title">Medical Lab</div>
+							<div class="icon_box_icon"><img src="images/abdominoplastia.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos Corporales </div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> Eliminar la celulitis, remodelar, reafirma la piel y conseguir un cuerpo perfecto sin pasar por el quirófano.</div>
 					</div>
 				</div>
 
@@ -320,10 +311,10 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_4.svg" alt=""></div>
-							<div class="icon_box_title">Dental Care</div>
+							<div class="icon_box_icon"><img src="images/cirugia-estetica.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos de Rejuvenecimiento </div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> Verse un aspecto más joven y natural sin pasar por el quirófano, ese sigue siendo el objetivo de la mayoría de mujeres.</div>
 					</div>
 				</div>
 
@@ -331,10 +322,10 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_5.svg" alt=""></div>
-							<div class="icon_box_title">Surgery</div>
+							<div class="icon_box_icon"><img src="images/cardiograma.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos Antioxidantes </div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> Tratamientos antioxidantes, energizantes e hidratantes que combaten las alteraciones y los signos del estres en la piel.</div>
 					</div>
 				</div>
 
@@ -342,17 +333,17 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="icon_box">
 						<div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-							<div class="icon_box_icon"><img src="images/icon_6.svg" alt=""></div>
-							<div class="icon_box_title">Neurology</div>
+							<div class="icon_box_icon"><img src="images/depilacion.svg" alt=""></div>
+							<div class="icon_box_title">Tratamientos para Piel Frágil</div>
 						</div>
-						<div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
+						<div class="icon_box_text"> ¿Piel extrafragíl? ¡No tienes de que preocuparte!, tenemos a los mejores expertos que te ayudarán con tu belleza. </div>
 					</div>
 				</div>
 
 			</div>
 			<div class="row">
 				<div class="col">
-					<div class="button services_button ml-auto mr-auto"><a href="#"><span>read more</span><span>read more</span></a></div>
+					<div class="button services_button ml-auto mr-auto"><a href="#"><span> Leer más </span><span> Leer más</span></a></div>
 				</div>
 			</div>
 		</div>
@@ -364,8 +355,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="section_title">Our Departments</div>
-					<div class="section_subtitle">to choose from</div>
+					<div class="section_title">Nuestros Productos</div>
 				</div>
 			</div>
 			<div class="row dept_row">
@@ -378,37 +368,37 @@
 								
 								<!-- Slide -->
 								<div class="owl-item dept_item">
-									<div class="dept_image"><img src="images/dept_1.jpg" alt=""></div>
+									<div class="dept_image"><img src="images/corporal.jpg" alt=""></div>
 									<div class="dept_content">
-										<div class="dept_title">Neonatology</div>
-										<div class="dept_link"><a href="#">Read More</a></div>
+										<div class="dept_title"> Cremas Corporales </div>
+										<div class="dept_link"><a href="#"> Leer más</a></div>
 									</div>
 								</div>
 
 								<!-- Slide -->
 								<div class="owl-item dept_item">
-									<div class="dept_image"><img src="images/dept_2.jpg" alt=""></div>
+									<div class="dept_image"><img src="images/gel.jpg" alt=""></div>
 									<div class="dept_content">
-										<div class="dept_title">Dentistry</div>
-										<div class="dept_link"><a href="#">Read More</a></div>
+										<div class="dept_title"> Geles </div>
+										<div class="dept_link"><a href="#">Leer más</a></div>
 									</div>
 								</div>
 
 								<!-- Slide -->
 								<div class="owl-item dept_item">
-									<div class="dept_image"><img src="images/dept_3.jpg" alt=""></div>
+									<div class="dept_image"><img src="images/aceite.jpg" alt=""></div>
 									<div class="dept_content">
-										<div class="dept_title">Orthopedics</div>
-										<div class="dept_link"><a href="#">Read More</a></div>
+										<div class="dept_title"> Aceites </div>
+										<div class="dept_link"><a href="#">Leer más</a></div>
 									</div>
 								</div>
 
 								<!-- Slide -->
 								<div class="owl-item dept_item">
-									<div class="dept_image"><img src="images/dept_4.jpg" alt=""></div>
+									<div class="dept_image"><img src="images/exfo.jpg" alt=""></div>
 									<div class="dept_content">
-										<div class="dept_title">Laboratory</div>
-										<div class="dept_link"><a href="#">Read More</a></div>
+										<div class="dept_title"> Exfoliantes </div>
+										<div class="dept_link"><a href="#">Leer más</a></div>
 									</div>
 								</div>
 
@@ -426,116 +416,10 @@
 		</div>
 	</div>
 
-	<!-- FAQ & News -->
-
-	<div class="stuff">
-		<div class="container">
-			<div class="row">
-
-				<!-- FAQ -->
-				<div class="col-lg-7">
-					<div class="faq">
-						<div class="faq_title">Faq & Stuff</div>
-						<div class="faq_subtitle">read all about it</div>
-						<div class="elements_accordions">
-							<div class="accordions">
-
-								<div class="accordion_container">
-									<div class="accordion d-flex flex-row align-items-center active"><div>Maecenas fermentum tortor id fringilla molestie.</div></div>
-									<div class="accordion_panel">
-										<div>
-											<p>Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris. Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing.</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion_container">
-									<div class="accordion d-flex flex-row align-items-center"><div>Duis quis lacinia elit. Etiam varius mi eget lacus ultricies elementum</div></div>
-									<div class="accordion_panel">
-										<div>
-											<p>Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris. Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing.</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion_container">
-									<div class="accordion d-flex flex-row align-items-center"><div>Maecenas fermentum tortor id fringilla molestie.</div></div>
-									<div class="accordion_panel">
-										<div>
-											<p>Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris. Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing.</p>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Latest News -->
-				<div class="col-lg-5">
-					<div class="news">
-						<div class="news_title">Latest News</div>
-						<div class="news_subtitle">read all about it</div>
-						<div class="news_container">
-
-							<!-- Latest News Post -->
-							<div class="latest d-flex flex-row align-items-start justify-content-start">
-								<div><div class="latest_image"><img src="images/latest_1.jpg" alt=""></div></div>
-								<div class="latest_content">
-									<div class="latest_title"><a href="news.html">A simple blog post</a></div>
-									<div class="latest_info">
-										<ul class="d-flex flex-row align-items-start justify-content-start">
-											<li><a href="#">by Jane Smith</a></li>
-											<li><a href="#">April 25, 2018</a></li>
-										</ul>
-									</div>
-									<div class="latest_comments"><a href="#">2 Comments</a></div>
-								</div>
-							</div>
-
-							<!-- Latest News Post -->
-							<div class="latest d-flex flex-row align-items-start justify-content-start">
-								<div><div class="latest_image"><img src="images/latest_2.jpg" alt=""></div></div>
-								<div class="latest_content">
-									<div class="latest_title"><a href="news.html">A new way to see things in medicine</a></div>
-									<div class="latest_info">
-										<ul class="d-flex flex-row align-items-start justify-content-start">
-											<li><a href="#">by Jane Smith</a></li>
-											<li><a href="#">April 25, 2018</a></li>
-										</ul>
-									</div>
-									<div class="latest_comments"><a href="#">2 Comments</a></div>
-								</div>
-							</div>
-
-							<!-- Latest News Post -->
-							<div class="latest d-flex flex-row align-items-start justify-content-start">
-								<div><div class="latest_image"><img src="images/latest_3.jpg" alt=""></div></div>
-								<div class="latest_content">
-									<div class="latest_title"><a href="news.html">Why is Pharma industry so big?</a></div>
-									<div class="latest_info">
-										<ul class="d-flex flex-row align-items-start justify-content-start">
-											<li><a href="#">by Jane Smith</a></li>
-											<li><a href="#">April 25, 2018</a></li>
-										</ul>
-									</div>
-									<div class="latest_comments"><a href="#">2 Comments</a></div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
 	<!-- Footer -->
 
 	<footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/footer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/otro.jpg" data-speed="0.8"></div>
 		<div class="footer_content">
 			<div class="container">
 				<div class="row">
@@ -544,9 +428,9 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_about">
 							<div class="logo">
-								<a href="#">health<span>+</span></a>	
+								<a href="#">Estethic<span>+</span></a>	
 							</div>
-							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
+							<div class="footer_about_text text-white"> Puedes seguir conociendonos en nuestras redes sociales, recuerda el cambio está en ti.</div>
 							<div class="footer_social">
 								<ul class="d-flex flex-row align-items-center justify-content-start">
 									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -557,9 +441,10 @@
 									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                                        <div class="copyright text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | X y F <i class="fa fa-heart-o" aria-hidden="true"></i> 
+
+
 </div>
 						</div>
 					</div>
@@ -567,15 +452,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<!-- Footer Contact -->
 					<div class="col-lg-5 footer_col">
 						<div class="footer_contact">
-							<div class="footer_contact_title">Quick Contact</div>
+							<div class="footer_contact_title"> Contáctanos </div>
 							<div class="footer_contact_form_container">
 								<form action="#" class="footer_contact_form" id="footer_contact_form">
 									<div class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
-										<input type="text" class="footer_contact_input" placeholder="Name" required="required">
+										<input type="text" class="footer_contact_input" placeholder="Nombre" required="required">
 										<input type="email" class="footer_contact_input" placeholder="E-mail" required="required">
 									</div>
-									<textarea class="footer_contact_input footer_contact_textarea" placeholder="Message" required="required"></textarea>
-									<button class="footer_contact_button">send message</button>
+									<textarea class="footer_contact_input footer_contact_textarea" placeholder="Mensaje" required="required"></textarea>
+									<button class="footer_contact_button"> Enviar mensaje</button>
 								</form>
 							</div>
 						</div>
@@ -584,23 +469,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<!-- Footer Hours -->
 					<div class="col-lg-4 footer_col">
 						<div class="footer_hours">
-							<div class="footer_hours_title">Opening Hours</div>
+							<div class="footer_hours_title">Horario de Atención </div>
 							<ul class="hours_list">
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div>Monday – Thursday</div>
+									<div>Lunes – Jueves</div>
 									<div class="ml-auto">8.00 – 19.00</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div>Friday</div>
+									<div>Viernes </div>
 									<div class="ml-auto">8.00 - 18.30</div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div>Saturday</div>
+									<div>Sábados </div>
 									<div class="ml-auto">9.30 – 17.00</div>
-								</li>
-								<li class="d-flex flex-row align-items-center justify-content-start">
-									<div>Sunday</div>
-									<div class="ml-auto">9.30 – 15.00</div>
 								</li>
 							</ul>
 						</div>
@@ -615,23 +496,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="footer_bar_content d-flex flex-sm-row flex-column align-items-lg-center align-items-start justify-content-start">
 							<nav class="footer_nav">
 								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-									<li class="active"><a href="index.html">Home</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="news.html">News</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li class="active"><a href="index.html">Inicio </a></li>
+									<li><a href="about.html">Nosotros</a></li>
+									<li><a href="services.html">Servicios</a></li>
+                                                                        <li><a href="contact.html">Productos </a></li>
+									<li><a href="contact.html">Contactanos </a></li>
 								</ul>
 							</nav>
-							<div class="footer_links">
-								<ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-									<li><a href="#">Help Desk</a></li>
-									<li><a href="#">Emergency Services</a></li>
-									<li><a href="#">Appointment</a></li>
-								</ul>
-							</div>
+						
 							<div class="footer_phone ml-lg-auto">
 								<i class="fa fa-phone" aria-hidden="true"></i>
-								<span>+34 586 778 8892</span>
+								<span>+57 310 455 5836</span>
 							</div>
 						</div>
 					</div>
