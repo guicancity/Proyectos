@@ -529,10 +529,16 @@ function comprobarClave(){
     clave2 = document.usuarionuevo.txtconpassword.value
 
     if (clave1 == clave2)
-       alert("Las dos claves son iguales...\nRealizaríamos las acciones del caso positivo")
+       alert("Las dos claves son iguales...\nRealizaríamos las acciones del caso positivo");
     else
-       alert("Las dos claves son distintas...\nRealizaríamos las acciones del caso negativo")
-}
+       alert("Las dos claves son distintas...\nRealizaríamos las acciones del caso negativo");
+}  
+<%
+      if(null!= request.getAttribute("errorMessage")){
+       out.println("$('#myModal').modal('show');");
+    }
+      %>
+
 </script> 
 
 </body>
