@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Login
-    Created on : 6/03/2020, 08:55:14 PM
-    Author     : User
---%>
 
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -39,7 +34,7 @@
                            
 			        <div class="container">
                                     <botton class="btn btn-xl btn-outline-light " style=" cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesion </botton>  
-                                        <a href="#Registro" class="btn btn-xl  btn-outline-light " style=" cursor:pointer"> Registrarse </a>  
+                                        <a href="#Registro" scroll-behavior: smooth class="btn btn-xl  btn-outline-light " style=" cursor:pointer"> Registrarse </a>  
                                 </div>
 			</ul>
 		</div>
@@ -79,7 +74,7 @@
                                                                                             <div class="container">
                                                                                             <botton class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer" type="button" data-toggle="modal" data-target="#myModal"> Inicio de Sesión </botton>  
                                                                                             </div>
-                                                                                            <a href="#Registro" class="btn btn-xl text-white " style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
+                                                                                            <a href="#Registro" data-ancla="registro" class="btn btn-xl text-white " style="background-color: #32c69a; cursor:pointer"> Registrarse </a>  
 											</ul>
 										</div>
 										<div class="header_top_phone">
@@ -127,7 +122,7 @@
       
                             <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h2 class="modal-title"> Inicio de Sesión </h2>
+                                    <h2 class="modal-title" > Inicio de Sesión </h2>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
 
@@ -137,19 +132,20 @@
                                            <div class="control-group">
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                             <label> Digite su usuario: </label>
-                                            <input class="form-control" placeholder="&#128272; Usuario" type="text" required="" name="txtUsuario">
+                                            <input class="form-control"  placeholder="&#128272; Usuario" style="color: gray" type="text" required="" name="txtUsuario">
                                                </div>
                                                <div class="form-group flotting-label-form-group controls mb-0 pb-2">
                                                <label>Digite su contraseña: </label>
-                                            <input class="form-control" placeholder="&#128273 Contraseña" type="password" required="" name="txtPassword">
+                                            <input class="form-control" placeholder="&#128273 Contraseña" style="color: gray" type="password" required="" name="txtPassword">
                                             <small><a href="#"> ¿Olvidó su contraseña? </a>  </small>
                                            </div>
                                           </div>
-                                                                                                                                
+                                           <h5 style="color:red">                                                                               
                                            <% if(null!=request.getAttribute("errorMessage")) {
-                                              out.println(request.getAttribute("errorMessage"));
+                                               out.println(request.getAttribute("errorMessage"));
                                               }
                                                %>
+                                           </h5>
                                                
                                     <div class="modal-footer">
                                         <button class="btn btn-xl text-white" style="background-color: #32c69a; cursor:pointer"> Ingresar </button>
@@ -183,7 +179,7 @@
 
        
 	<!-- Info Boxes -->
- <a name="Registro" ></a>
+ <a id="Registro" ></a>
 	<div class="info">
 		<div class="container">
 			<div class="row row-eq-height">
@@ -515,7 +511,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 </div>
-
+                              
+                                               
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
