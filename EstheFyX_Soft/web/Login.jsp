@@ -234,7 +234,7 @@
                                                         <input type="text" name="txtusuario" class="info_input" placeholder="Usuario" required="required">
 							<input type="password" name="txtpassword" class="info_input" placeholder="Contraseña" required="required">
                                                         <input type="password" name="txtconpassword" class="info_input" placeholder="Confirmar contraseña" required="required">
-                                                        <input type="file" name="flefoto" class="info_input">
+                                                        <input type="file" name="flefoto" class="form-control">
                                                         
                                                         <button class="info_form_button" onclick="comprobarClave()"> Registrar</button>
                                                         <br>
